@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules implem="RULEEXECUTIONSET" name="Hello" contextFactory="CONTEXT:com.massa.mrules.jbosstest.model.User">
+	<executable implem="FLOWCONTROL" command="STOP">
+		<returnValue implem="FORMAT" message="Hello {{first}} {{last}}, how are you today ?" first=":firstName" last=":lastName" />
+	</executable>
+</rules>
